@@ -11,6 +11,4 @@ echo "Heute ist der $datum<br>";
 
 hallo
 
-test
-
 <?require("foot.php");?>
