@@ -39,6 +39,7 @@ function tabelleUser()
     <th>Passworthash</th>
     <th>Eingetragen am</th>
     <th>Geburtsdatum</th>
+    <th>Admin-Level</th>
     </tr>
     </thead>
     ");
