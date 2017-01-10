@@ -9,4 +9,6 @@ echo "Heute ist der $datum<br>";
 
 ?>	
 
+hallo
+
 <?require("foot.php");?>
