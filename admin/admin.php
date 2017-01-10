@@ -1,14 +1,18 @@
-<?require("head.php"); ?>
+<?require("../www/head.php"); ?>
 
-<?php  require("../inc/includes.php"); 
+<?php  
+require("../inc/includes.php"); 
+require("adminHilfsfunktionen.php");
 
 $datum = date("d.m.Y H:i");
 echo "Heute ist der $datum<br>";
-
-
-
 ?>	
 
-hallo
+<?php
 
-<?require("foot.php");?>
+tabelleUser();
+
+?>
+
+
+<?require("../www/foot.php");?>
