@@ -12,6 +12,8 @@ echo "Heute ist der $datum<br>";
 
 tabelleUser();
 
+echo("hallo");
+
 ?>
 
 
