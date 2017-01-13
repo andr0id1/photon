@@ -7,6 +7,7 @@ function tabelleUser()
 
     if(isset($_POST['limit']))                              //Das Limit für die Ausgegebenen Nuzter festlegen.
     {
+        echo_r($_POST['limit']);
         $limit=$_POST['limit'];
     }
     else
@@ -62,9 +63,26 @@ function tabelleUser()
 
                                                                 //Manuelle anza
     echo("
+    <script type='text/javascript'>
+
+onunload = function()
+{
+	var foo = document.getElementById('foo');
+	self.name = 'fooidx' + foo.selectedIndex;
+}
+
+onload = function()
+{
+	var idx, foo = document.getElementById('foo');
+	foo.selectedIndex = (idx = self.name.split('fooidx')) ?	idx[1] : 0;
+}
+
+</script>
     <form action='admin.php' method='post'>
     Limit er angezeigten Nutzer:												
-    <select name='limit' size='1'>
+    <select id='foo' name='limit' size='1'onchange='options[selectedIndex].value&&self.location.reload(true)' >
+    <option value='5' selected='selected'>choose</option>
+    <option value='5'></option>
     <option></option>
     <option>1</option>
     <option>2</option>	
