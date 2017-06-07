@@ -14,6 +14,7 @@ $basescript=$_SERVER["REQUEST_URI"];
 require($basedir."/inc/dbconfig.php");
 require($basedir."/inc/db.class.php");
 require($basedir."/inc/hilfsfunktionen.php");
+require($basedir."/inc/funktionen.php");
 
 // Stelle Datenbankverbindung her 
 // Verbindungsdaten stehen in dbconfig.php 
