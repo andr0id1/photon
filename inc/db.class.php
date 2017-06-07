@@ -19,6 +19,7 @@ class db
 			$this->con = null;
 			return false;
 		}
+		mysql_set_charset('utf8',$this->con);
 		
 		// Datenbankverbindung
 		if (@mysql_select_db($database, $this->con)===false)
