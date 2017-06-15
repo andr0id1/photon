@@ -66,4 +66,6 @@ foreach($result AS $key=>$k)
 
 			echo "</form>";
 ?>
+
+test4
    
